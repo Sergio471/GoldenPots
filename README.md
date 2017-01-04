@@ -18,4 +18,4 @@ Set both *_EPS to 0.00 to make starting distribution of gold and AI perfect.
 
 #Example of a game (human started)
 
-![](https://github.com/Sergio471/GoldenPots/blob/master/game_example.png =120x100)
+<img src="https://github.com/Sergio471/GoldenPots/blob/master/game_example.png" alt="Drawing" style="width: 120px; height: 100px;"/>
