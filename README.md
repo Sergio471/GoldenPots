@@ -7,8 +7,8 @@ You and AI can collect gold only from left most or right most of the remaining p
 At each step, row of numbers represents number of gold coins in pots.
 
 #Setup and Run
-make
-./golden_pots
+make  
+./golden_pots  
 
 # Technical details
 There is a little disbalance in starting distribution of gold in pots.
@@ -17,7 +17,7 @@ The greater BALANCE_EPS in code, the greater disbalance.
 Also, AI can make a 50% mistake if benefits of both moves differ slightly.
 The greater MISTAKE_EPS in code, the less accurate is AI.
 
-Set both *_EPS to 0.00 to make starting distribution of gold and AI perfect.
+Set both *_EPS to 0.00 to make balance of starting distribution of gold and AI perfect.
 (In such case, it is impossible to win).
 
 #Example of a game (human started)
