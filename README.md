@@ -6,6 +6,10 @@ In order to win, you should collect more gold than AI does.
 You and AI can collect gold only from left most or right most of the remaining pots.
 At each step, row of numbers represents number of gold coins in pots.
 
+#Setup and Run
+make
+./golden_pots
+
 # Technical details
 There is a little disbalance in starting distribution of gold in pots.
 The greater BALANCE_EPS in code, the greater disbalance.
