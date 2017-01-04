@@ -18,34 +18,33 @@ Set both *_EPS to 0.00 to make starting distribution of gold and AI perfect.
 
 #Example of a game (human started)
 
------------------------------------
 Current State:  7 3 6 7 6 9 7 7 7 9
 Player is taking: left
------------------------------------
+
 Current State:    3 6 7 6 9 7 7 7 9
 AI is taking: right
------------------------------------
+
 Current State:    3 6 7 6 9 7 7 7  
 Player is taking: right
------------------------------------
+
 Current State:    3 6 7 6 9 7 7    
 AI is taking: right
------------------------------------
+
 Current State:    3 6 7 6 9 7      
 Player is taking: right
------------------------------------
+
 Current State:    3 6 7 6 9        
 AI is taking: right
------------------------------------
+
 Current State:    3 6 7 6          
 Player is taking: right
------------------------------------
+
 Current State:    3 6 7            
 AI is taking: right
------------------------------------
+
 Current State:    3 6              
 Player is taking: right
------------------------------------
+
 Current State:    3                
 AI is taking: left
 Player score: 33
