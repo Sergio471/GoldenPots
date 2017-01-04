@@ -10,9 +10,9 @@ At each step, row of numbers represents number of gold coins in pots.
 make  
 ./golden_pots [num_of_pots [max_gold_in_pot]]
 
-Examples:
-./golden_pots 14 (14 pots with up to 10 gold coins in each)
-./golden_pots 15 19 (15 pots with up to 19 gold coins in each)
+Examples:  
+./golden_pots 14 (14 pots with up to 10 gold coins in each)  
+./golden_pots 15 19 (15 pots with up to 19 gold coins in each)  
 
 # Technical details
 There is a little disbalance in starting distribution of gold in pots.
