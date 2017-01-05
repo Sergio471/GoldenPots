@@ -8,10 +8,9 @@ At each step, row of numbers represents number of gold coins in pots.
 
 #Setup and Run
 ```shell
+make
 ./golden_pots [num_of_pots [max_gold_in_pot]]  
-```
-make  
-
+```  
 Examples:  
 ```shell
 ./golden_pots 14 (14 pots with up to 10 gold coins in each)  
