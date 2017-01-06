@@ -134,7 +134,7 @@ int main(int argc, char* argv[])
 
     std::srand(std::time(0));
 
-    int N = 10;
+    int N = 10 + std::rand() % 6;
     int MAX = 10;
     if (argc > 1) N = std::max(3, atoi(argv[1]));
     if (argc > 2) MAX = std::max(1, atoi(argv[2]));
