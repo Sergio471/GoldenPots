@@ -19,13 +19,12 @@ Examples:
 
 # Technical details
 There is a little disbalance in starting distribution of gold in pots.
-The greater BALANCE_EPS in code, the greater is disbalance.
+The greater DISBALANCE_EPS in code, the greater is disbalance.
 
 Also, AI can make a 50% mistake if benefits of both moves differ only slightly.
 The greater MISTAKE_EPS in code, the less accurate is AI.
 
 Set both *_EPS to 0.00 to make balance of starting distribution of gold and AI perfect.
-(In such case, it is impossible to win).
 
 #Example of a round (human started)
 

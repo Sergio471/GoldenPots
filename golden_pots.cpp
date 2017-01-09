@@ -15,7 +15,7 @@ typedef std::vector<row_t> mem_t;
 static mem_t mem;
 
 static const float MISTAKE_EPS = 0.03;
-static const float BALANCE_EPS = 0.05;
+static const float DISBALANCE_EPS = 0.05;
 
 void print(const std::vector<int> &pots, int s, int e) {
     auto dig_cnt = [](int n) { int c = 0; while (n) { n /= 10; ++c; } return c;};
@@ -53,7 +53,7 @@ int predict_score(const std::vector<int>& pots, int s, int e, bool& left_move) {
     int right = pots[e] + std::min(predict_score(pots, s, e - 2, tmp), predict_score(pots, s + 1, e - 1, tmp));
 
     float eps = ((float)std::abs(left - right)) / std::max(left, right);
-    left_move = (eps > MISTAKE_EPS ? left > right : std::rand() % 2);
+    left_move = (eps <= MISTAKE_EPS || left == right ? std::rand() % 2 : left > right);
     mem[s][e].second = left_move;
 
     return mem[s][e].first = std::max(left, right);
@@ -111,7 +111,7 @@ bool well_balanced(const std::vector<int>& pots) {
     int best_score = predict_score(pots, 0, pots.size() - 1, tmp);
     clear_dp_memo();
     float eps = ((float)std::abs(best_score * 2 - sum)) / std::max(best_score, sum);
-    if (eps > BALANCE_EPS) return false;
+    if (eps > DISBALANCE_EPS) return false;
     return true;
 }
 
